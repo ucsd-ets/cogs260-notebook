@@ -16,6 +16,8 @@ RUN pip install dpkt \
 # Pregenerate matplotlib cache
 RUN python -c 'import matplotlib.pyplot'
 
+# python 3.7
+RUN conda install --yes python=3.7.6
 RUN conda clean -tipsy
 
 # import integration tests
